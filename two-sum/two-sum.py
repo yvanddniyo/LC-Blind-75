@@ -4,13 +4,12 @@ from typing import List
 class Solution:
     def two_sum(self, nums: List[int], target: int):
         obj = {}
-        for index, num in enumerate(nums):
-            print("print", obj)
+        for idx, num in enumerate(nums):
             diff = target - num
             if diff in obj:
-                return [obj[diff], index]
+                return [obj[diff], idx]
             else:
-                obj[num] = index
+                obj[num] = idx
         return
 
 
